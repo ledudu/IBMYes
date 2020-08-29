@@ -18,8 +18,8 @@ jobs:
     - name: Install CF CLI
       run: |
         curl -L "https://download.clis.cloud.ibm.com/ibm-cloud-cli/1.2.0/binaries/IBM_Cloud_CLI_1.2.0_linux_amd64.tgz" | tar -zx
-        echo pwd
-        sudo mv IBM_Cloud_CLI /usr/local/bin
+        echo `pwd`
+        sudo cp IBM_Cloud_CLI /usr/local/bin
       
     - name: Init
       run: |
