@@ -2,11 +2,11 @@ name: USB IBM Cloud Auto Restart
 
 on:
   push:
-    branches: [ master ]
+    # branches: [ master ]
   pull_request:
-    branches: [ master ]
+    # branches: [ master ]
   schedule:
-    - cron: '0 19 * * *'
+    # - cron: '0 19 * * *'
 
 jobs:
   ibm-cloud-restart:
